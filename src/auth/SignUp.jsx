@@ -2,6 +2,7 @@ import { Box, Button, Container, Paper, TextField, Typography } from '@mui/mater
 import { useState } from 'react'
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 const SignUp = () => {
@@ -53,7 +54,7 @@ const SignUp = () => {
                 })
 
                 setTimeout(()=>{
-                    navigate("/login");
+                    navigate("/");
                 },2000)
             }
         } catch (e) {

@@ -22,8 +22,7 @@ const UserList = () => {
           setAlert({ severity: 'warning', message: 'No users found.' });
         }
       } catch (error) {
-        const errorMsg = error.response?.data?.message || 'Failed to fetch data.';
-        setAlert({ severity: 'error', message: errorMsg });
+         setAlert({ severity: 'error', message: errorMsg });
       } finally {
         setLoading(false);
       }

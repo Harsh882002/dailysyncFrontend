@@ -50,7 +50,7 @@ const navigate  = useNavigate()
 
                 setTimeout(() =>{
                 navigate("/dashboard");
-                },20000)
+                },2000)
             }
         } catch (e) {
             console.log("Error", e);

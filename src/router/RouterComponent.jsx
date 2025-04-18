@@ -52,7 +52,6 @@ const RouterComponent = () => {
                   <EditUser />
                </AuthRoute>
             } />
-
             
             {/* Catch-all route for invalid URLs */}
             <Route path="*" element={<Navigate to="/dashboard" />} />
